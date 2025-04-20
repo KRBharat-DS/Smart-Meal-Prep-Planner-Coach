@@ -1,0 +1,9 @@
+{
+  "user_id": "user123",
+  "fitness_goal": "weight loss",
+  "dietary_preferences": ["vegetarian"],
+  "allergies_or_avoidances": ["nuts", "shellfish"],
+  "taste_preferences": ["likes spicy", "prefers savory breakfast"],
+  "schedule_constraints": ["dinner out Wednesday", "needs quick lunches (under 30 mins prep+cook)"],
+  "specific_requests": ["Include pasta at least twice", "No mushrooms"]
+}
