@@ -1,0 +1,70 @@
+{
+  "description": "Schema for a basic 7-day meal plan with meal names only.",
+  "type": "object",
+  "properties": {
+    "day_1": {
+      "type": "object",
+      "properties": {
+        "breakfast": { "type": "string", "description": "Name of the breakfast meal" },
+        "lunch": { "type": "string", "description": "Name of the lunch meal" },
+        "dinner": { "type": "string", "description": "Name of the dinner meal" }
+      },
+      "required": ["breakfast", "lunch", "dinner"]
+    },
+    "day_2": {
+      "type": "object",
+      "properties": {
+        "breakfast": { "type": "string", "description": "Name of the breakfast meal" },
+        "lunch": { "type": "string", "description": "Name of the lunch meal" },
+        "dinner": { "type": "string", "description": "Name of the dinner meal" }
+      },
+      "required": ["breakfast", "lunch", "dinner"]
+    },
+    "day_3": {
+      "type": "object",
+      "properties": {
+        "breakfast": { "type": "string", "description": "Name of the breakfast meal" },
+        "lunch": { "type": "string", "description": "Name of the lunch meal" },
+        "dinner": { "type": "string", "description": "Name of the dinner meal" }
+      },
+      "required": ["breakfast", "lunch", "dinner"]
+    },
+    "day_4": {
+      "type": "object",
+      "properties": {
+        "breakfast": { "type": "string", "description": "Name of the breakfast meal" },
+        "lunch": { "type": "string", "description": "Name of the lunch meal" },
+        "dinner": { "type": "string", "description": "Name of the dinner meal" }
+      },
+      "required": ["breakfast", "lunch", "dinner"]
+    },
+    "day_5": {
+      "type": "object",
+      "properties": {
+        "breakfast": { "type": "string", "description": "Name of the breakfast meal" },
+        "lunch": { "type": "string", "description": "Name of the lunch meal" },
+        "dinner": { "type": "string", "description": "Name of the dinner meal" }
+      },
+      "required": ["breakfast", "lunch", "dinner"]
+    },
+    "day_6": {
+      "type": "object",
+      "properties": {
+        "breakfast": { "type": "string", "description": "Name of the breakfast meal" },
+        "lunch": { "type": "string", "description": "Name of the lunch meal" },
+        "dinner": { "type": "string", "description": "Name of the dinner meal" }
+      },
+      "required": ["breakfast", "lunch", "dinner"]
+    },
+    "day_7": {
+      "type": "object",
+      "properties": {
+        "breakfast": { "type": "string", "description": "Name of the breakfast meal" },
+        "lunch": { "type": "string", "description": "Name of the lunch meal" },
+        "dinner": { "type": "string", "description": "Name of the dinner meal" }
+      },
+      "required": ["breakfast", "lunch", "dinner"]
+    }
+  },
+  "required": ["day_1", "day_2", "day_3", "day_4", "day_5", "day_6", "day_7"]
+}

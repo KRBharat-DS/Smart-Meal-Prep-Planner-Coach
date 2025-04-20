@@ -1,0 +1,63 @@
+{
+  "description": "Schema for a detailed 7-day meal plan including recipes, ingredients, and times.",
+  "type": "object",
+  "properties": {
+    "day_1": { "$ref": "#/definitions/dailyPlan" },
+    "day_2": { "$ref": "#/definitions/dailyPlan" },
+    "day_3": { "$ref": "#/definitions/dailyPlan" },
+    "day_4": { "$ref": "#/definitions/dailyPlan" },
+    "day_5": { "$ref": "#/definitions/dailyPlan" },
+    "day_6": { "$ref": "#/definitions/dailyPlan" },
+    "day_7": { "$ref": "#/definitions/dailyPlan" }
+  },
+  "required": ["day_1", "day_2", "day_3", "day_4", "day_5", "day_6", "day_7"],
+  "definitions": {
+    "mealDetail": {
+      "type": "object",
+      "properties": {
+        "meal_name": {
+          "type": "string",
+          "description": "Name of the meal."
+        },
+        "ingredients": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "List of ingredients needed for the meal."
+        },
+        "recipe_steps": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Concise steps to prepare the meal."
+        },
+        "prep_time_minutes": {
+          "type": "integer",
+          "description": "Estimated preparation time in minutes."
+        },
+        "cook_time_minutes": {
+          "type": "integer",
+          "description": "Estimated cooking time in minutes."
+        },
+        "swappable_suggestion": {
+          "type": "string",
+          "description": "(Optional) A quick alternative meal suggestion."
+        }
+      },
+      "required": [
+        "meal_name",
+        "ingredients",
+        "recipe_steps",
+        "prep_time_minutes",
+        "cook_time_minutes"
+      ]
+    },
+    "dailyPlan": {
+      "type": "object",
+      "properties": {
+        "breakfast": { "$ref": "#/definitions/mealDetail" },
+        "lunch": { "$ref": "#/definitions/mealDetail" },
+        "dinner": { "$ref": "#/definitions/mealDetail" }
+      },
+      "required": ["breakfast", "lunch", "dinner"]
+    }
+  }
+}
