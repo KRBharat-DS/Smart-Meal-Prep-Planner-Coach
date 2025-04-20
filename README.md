@@ -23,7 +23,7 @@ This project generates personalized 7-day meal plans using the Google Gemini Gen
 
 ## Project Structure
 
-
+```
 smart-meal-planner/
 ├── .env # Stores secret API keys (MUST NOT be committed to Git)
 ├── .gitignore # Specifies files/folders for Git to ignore
@@ -51,7 +51,7 @@ smart-meal-planner/
 ├── llm_client.py # Handles interaction with Gemini API
 └── plan_generator.py # Orchestrates the plan generation logic
 
-
+```
 
 
 
